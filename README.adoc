@@ -1,0 +1,11 @@
+= adhesive_event_debugger
+
+adhesive_event_debugger program.
+
+== Installation
+
+
+[source,sh]
+-----------------------------------------------------------------------------
+pip install adhesive_event_debugger
+-----------------------------------------------------------------------------

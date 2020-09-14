@@ -1,0 +1,4 @@
+adhesive_event_debugger: true
+arg0: adhesive_event_debugger
+templates:
+- py3/pyside2
