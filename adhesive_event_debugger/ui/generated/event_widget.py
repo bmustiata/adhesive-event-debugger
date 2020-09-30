@@ -17,26 +17,23 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(402, 293)
-        self.horizontalLayoutWidget = QWidget(Form)
-        self.horizontalLayoutWidget.setObjectName(u"horizontalLayoutWidget")
-        self.horizontalLayoutWidget.setGeometry(QRect(20, 30, 261, 41))
-        self.horizontalLayout = QHBoxLayout(self.horizontalLayoutWidget)
+        Form.resize(402, 43)
+        self.horizontalLayout = QHBoxLayout(Form)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label = QLabel(self.horizontalLayoutWidget)
+        self.label = QLabel(Form)
         self.label.setObjectName(u"label")
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer = QSpacerItem(203, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout.addItem(self.horizontalSpacer)
 
-        self.sendMessage = QPushButton(self.horizontalLayoutWidget)
-        self.sendMessage.setObjectName(u"sendMessage")
+        self.send_button = QPushButton(Form)
+        self.send_button.setObjectName(u"send_button")
 
-        self.horizontalLayout.addWidget(self.sendMessage)
+        self.horizontalLayout.addWidget(self.send_button)
 
 
         self.retranslateUi(Form)
@@ -47,6 +44,6 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.label.setText(QCoreApplication.translate("Form", u"QueueName", None))
-        self.sendMessage.setText(QCoreApplication.translate("Form", u"Send", None))
+        self.send_button.setText(QCoreApplication.translate("Form", u"Send", None))
     # retranslateUi
 

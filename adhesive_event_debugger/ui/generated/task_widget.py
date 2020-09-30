@@ -17,23 +17,20 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(440, 216)
-        self.horizontalLayoutWidget = QWidget(Form)
-        self.horizontalLayoutWidget.setObjectName(u"horizontalLayoutWidget")
-        self.horizontalLayoutWidget.setGeometry(QRect(30, 20, 261, 41))
-        self.horizontalLayout = QHBoxLayout(self.horizontalLayoutWidget)
+        Form.resize(440, 43)
+        self.horizontalLayout = QHBoxLayout(Form)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label = QLabel(self.horizontalLayoutWidget)
+        self.label = QLabel(Form)
         self.label.setObjectName(u"label")
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer = QSpacerItem(296, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout.addItem(self.horizontalSpacer)
 
-        self.sendMessage = QPushButton(self.horizontalLayoutWidget)
+        self.sendMessage = QPushButton(Form)
         self.sendMessage.setObjectName(u"sendMessage")
 
         self.horizontalLayout.addWidget(self.sendMessage)
