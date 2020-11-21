@@ -8,6 +8,7 @@ import oaas
 
 
 oaas.register_server_provider(oaas_simple.OaasSimpleServer(port=9000))
+oaas.register_client_provider(oaas_simple.OaasSimpleClient())
 
 oaas.serve()
 

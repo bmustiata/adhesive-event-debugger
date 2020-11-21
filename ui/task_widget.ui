@@ -47,7 +47,7 @@
     </spacer>
    </item>
    <item>
-    <widget class="QPushButton" name="sendMessage">
+    <widget class="QPushButton" name="release_button">
      <property name="text">
       <string>Release</string>
      </property>

@@ -30,10 +30,10 @@ class Ui_Form(object):
 
         self.horizontalLayout.addItem(self.horizontalSpacer)
 
-        self.sendMessage = QPushButton(Form)
-        self.sendMessage.setObjectName(u"sendMessage")
+        self.release_button = QPushButton(Form)
+        self.release_button.setObjectName(u"release_button")
 
-        self.horizontalLayout.addWidget(self.sendMessage)
+        self.horizontalLayout.addWidget(self.release_button)
 
 
         self.retranslateUi(Form)
@@ -44,6 +44,6 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.label.setText(QCoreApplication.translate("Form", u"Task", None))
-        self.sendMessage.setText(QCoreApplication.translate("Form", u"Release", None))
+        self.release_button.setText(QCoreApplication.translate("Form", u"Release", None))
     # retranslateUi
 
