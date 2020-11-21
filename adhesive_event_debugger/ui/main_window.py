@@ -29,8 +29,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 task_name=event_generator.task_name,
             ))
 
-        self.messages_group_box.invalidate()
-
     @mopyx.render
     def add_active_events(self):
         clear_layout(self.running_group_box)
